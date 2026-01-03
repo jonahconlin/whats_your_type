@@ -57,7 +57,7 @@ export default function FontCard({
       aria-label={`Select ${fontFamily} font`}
     >
       {/* Font name at the top - Figma Mobile: 10px at 30% opacity, Desktop: 18px at 50% */}
-      <div className="pt-[10px] md:pt-4 px-3 md:px-4 flex justify-center">
+      <div className="pt-[10px] md:pt-4 px-3 md:px-4 flex justify-center items-center w-full">
         <span className="text-white text-[14px] md:text-[18px] opacity-50 md:opacity-50 font-sf-pro leading-[1.19em] text-center">
           {fontFamily}
         </span>

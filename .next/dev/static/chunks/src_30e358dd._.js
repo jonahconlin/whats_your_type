@@ -124,7 +124,7 @@ function FontCard({ fontFamily, sampleText = "Handgloves", onClick, isSelected =
         "aria-label": `Select ${fontFamily} font`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "pt-[10px] md:pt-4 px-3 md:px-4 flex justify-center",
+                className: "pt-[10px] md:pt-4 px-3 md:px-4 flex justify-center items-center w-full",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                     className: "text-white text-[14px] md:text-[18px] opacity-50 md:opacity-50 font-sf-pro leading-[1.19em] text-center",
                     children: fontFamily
