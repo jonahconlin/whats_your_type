@@ -386,6 +386,10 @@ img, video {
   top: 9px;
 }
 
+.right-\[26px\] {
+  right: 26px;
+}
+
 .z-10 {
   z-index: 10;
 }
@@ -1636,6 +1640,10 @@ body {
     height: 66px;
   }
 
+  .max-md\:h-\[64px\] {
+    height: 64px;
+  }
+
   .max-md\:pt-\[20px\] {
     padding-top: 20px;
   }
@@ -1643,15 +1651,27 @@ body {
   .max-md\:pt-\[47px\] {
     padding-top: 47px;
   }
+
+  .max-md\:pt-\[22px\] {
+    padding-top: 22px;
+  }
 }
 
 @media (min-width: 768px) {
+  .md\:relative {
+    position: relative;
+  }
+
   .md\:left-\[32px\] {
     left: 32px;
   }
 
   .md\:top-\[102px\] {
     top: 102px;
+  }
+
+  .md\:right-auto {
+    right: auto;
   }
 
   .md\:block {
@@ -1664,6 +1684,10 @@ body {
 
   .md\:items-center {
     align-items: center;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:rounded-\[128px\] {

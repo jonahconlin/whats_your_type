@@ -49,8 +49,8 @@ export default function Navbar({
   
   // Mobile heights based on Figma - only apply on mobile
   const mobileHeightStyles = mobileHeight === "tall" 
-    ? "max-md:h-[113px] max-md:pt-[47px]" // Status bar area + nav content
-    : "max-md:h-[66px] max-md:pt-[20px]";
+    ? "max-md:h-[64px]" // Mobile navbar height
+    : "max-md:h-[64px]";
 
   return (
     <nav 
@@ -65,7 +65,7 @@ export default function Navbar({
         ${className}
       `}
     >
-      <div className="w-full h-full px-[26px] md:px-8 flex items-center md:items-center justify-between">
+      <div className="w-full h-full px-[26px] md:px-8 flex items-center justify-between relative">
         {/* Logo - Figma Mobile: SF Pro Display, 20px, 80% opacity */}
         <span className={`${textColorClass} text-[20px] font-normal font-sf-pro-display leading-[1.4em]`}>
           What&apos;s your type?
@@ -76,7 +76,7 @@ export default function Navbar({
           onClick={showExit && onExitClick ? onExitClick : onShareClick}
           onMouseEnter={!showExit ? onShareMouseEnter : undefined}
           onMouseLeave={!showExit ? onShareMouseLeave : undefined}
-          className={`${textColorClass} text-[14px] md:text-[20px] font-normal font-sf-pro-display leading-[1.19em] md:leading-[130%] hover:opacity-60 transition-opacity`}
+          className={`${textColorClass} text-[14px] md:text-[20px] font-normal font-sf-pro-display leading-[1.19em] md:leading-[130%] hover:opacity-60 transition-opacity absolute right-[26px] md:relative md:right-auto`}
         >
           {showExit ? (exitText || "Exit") : "Share"}
         </button>

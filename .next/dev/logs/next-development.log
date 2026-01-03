@@ -319,3 +319,12 @@ It can also happen if the client has a browser extension installed which messes 
 [23:59:40.503] Server  LOG     ✓ Compiled in 23ms
 [24:12:47.631] Server  LOG     ✓ Compiled in 113ms
 [24:12:48.986] Server  LOG     ✓ Compiled in 14ms
+[24:55:59.280] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[24:55:59.281] Browser LOG     Survey response submitted to Supabase
+[28:40:27.949] Server  LOG     ✓ Compiled in 196ms
+[28:41:42.119] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[28:43:41.595] Server  LOG     ✓ Compiled in 108ms
+[28:43:54.987] Server  LOG     ✓ Compiled in 22ms
+[28:44:45.332] Server  LOG     ✓ Compiled in 45ms
+[28:44:48.206] Server  LOG     ✓ Compiled in 75ms
+[28:45:42.950] Server  LOG     ✓ Compiled in 43ms

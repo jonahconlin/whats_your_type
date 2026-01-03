@@ -50,8 +50,8 @@ function Navbar({ className = "", showExit = false, variant = "light", onExitCli
     const textColorClass = isDark ? "text-white/80" : "text-[#03060f]/80";
     const borderColorClass = isDark ? "border-white/30" : "border-[#03060f]/20";
     // Mobile heights based on Figma - only apply on mobile
-    const mobileHeightStyles = mobileHeight === "tall" ? "max-md:h-[113px] max-md:pt-[47px]" // Status bar area + nav content
-     : "max-md:h-[66px] max-md:pt-[20px]";
+    const mobileHeightStyles = mobileHeight === "tall" ? "max-md:h-[64px] max-md:pt-[22px]" // Status bar area + nav content
+     : "max-md:h-[64px] max-md:pt-[22px]";
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
         className: `
         fixed top-0 left-0 right-0 
@@ -64,7 +64,7 @@ function Navbar({ className = "", showExit = false, variant = "light", onExitCli
         ${className}
       `,
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-            className: "w-full h-full px-[26px] md:px-8 flex items-center md:items-center justify-between",
+            className: "w-full h-full px-[26px] md:px-8 flex items-center justify-center md:justify-between",
             children: [
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                     className: `${textColorClass} text-[20px] font-normal font-sf-pro-display leading-[1.4em]`,
@@ -78,7 +78,7 @@ function Navbar({ className = "", showExit = false, variant = "light", onExitCli
                     onClick: showExit && onExitClick ? onExitClick : onShareClick,
                     onMouseEnter: !showExit ? onShareMouseEnter : undefined,
                     onMouseLeave: !showExit ? onShareMouseLeave : undefined,
-                    className: `${textColorClass} text-[14px] md:text-[20px] font-normal font-sf-pro-display leading-[1.19em] md:leading-[130%] hover:opacity-60 transition-opacity`,
+                    className: `${textColorClass} text-[14px] md:text-[20px] font-normal font-sf-pro-display leading-[1.19em] md:leading-[130%] hover:opacity-60 transition-opacity absolute right-[26px] md:relative md:right-auto`,
                     children: showExit ? exitText || "Exit" : "Share"
                 }, void 0, false, {
                     fileName: "[project]/src/components/Navbar.tsx",
