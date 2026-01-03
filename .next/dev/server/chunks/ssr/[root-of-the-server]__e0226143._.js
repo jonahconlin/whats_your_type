@@ -142,9 +142,9 @@ function FontCard({ fontFamily, sampleText = "Handgloves", onClick, isSelected =
         "aria-label": `Select ${fontFamily} font`,
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "pt-[10px] md:pt-4 px-3 md:px-4",
+                className: "pt-[10px] md:pt-4 px-3 md:px-4 flex justify-center",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-white text-[10px] md:text-[18px] opacity-30 md:opacity-50 font-sf-pro leading-[1.19em]",
+                    className: "text-white text-[14px] md:text-[18px] opacity-50 md:opacity-50 font-sf-pro leading-[1.19em] text-center",
                     children: fontFamily
                 }, void 0, false, {
                     fileName: "[project]/src/components/FontCard.tsx",
@@ -157,9 +157,9 @@ function FontCard({ fontFamily, sampleText = "Handgloves", onClick, isSelected =
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "flex-1 flex items-center justify-center px-3 md:px-4 pb-3 md:pb-4",
+                className: "flex-1 flex items-center justify-center px-3 md:px-4 pb-3 md:pb-4 w-full",
                 children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                    className: "text-white text-[22px] md:text-[clamp(40px,5vw,60px)] text-center leading-[1.3em]",
+                    className: "text-white text-[22px] md:text-[clamp(40px,5vw,60px)] text-center leading-[1.3em] w-full",
                     style: {
                         fontFamily: cssFont
                     },

@@ -57,16 +57,16 @@ export default function FontCard({
       aria-label={`Select ${fontFamily} font`}
     >
       {/* Font name at the top - Figma Mobile: 10px at 30% opacity, Desktop: 18px at 50% */}
-      <div className="pt-[10px] md:pt-4 px-3 md:px-4">
-        <span className="text-white text-[10px] md:text-[18px] opacity-30 md:opacity-50 font-sf-pro leading-[1.19em]">
+      <div className="pt-[10px] md:pt-4 px-3 md:px-4 flex justify-center">
+        <span className="text-white text-[14px] md:text-[18px] opacity-50 md:opacity-50 font-sf-pro leading-[1.19em] text-center">
           {fontFamily}
         </span>
       </div>
       
       {/* Handgloves text centered - Figma Mobile: 22px, Desktop: 60px responsive */}
-      <div className="flex-1 flex items-center justify-center px-3 md:px-4 pb-3 md:pb-4">
+      <div className="flex-1 flex items-center justify-center px-3 md:px-4 pb-3 md:pb-4 w-full">
         <span 
-          className="text-white text-[22px] md:text-[clamp(40px,5vw,60px)] text-center leading-[1.3em]"
+          className="text-white text-[22px] md:text-[clamp(40px,5vw,60px)] text-center leading-[1.3em] w-full"
           style={{ fontFamily: cssFont }}
         >
           {sampleText}
