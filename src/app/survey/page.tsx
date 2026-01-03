@@ -244,7 +244,7 @@ export default function SurveyPage() {
       
       {/* ===== MOBILE LAYOUT ===== */}
       {/* Figma Mobile: 390x844px, vertical stack layout */}
-      <div className="md:hidden relative z-10 min-h-screen pt-[113px] flex flex-col">
+      <div className="md:hidden relative z-10 min-h-screen pt-[64px] flex flex-col">
         {/* Mobile Header - Figma: starts at y:112.76, height 156px */}
         {/* "Choose a font" at x:26 y:24 (from header), Adjective pill at x:26 y:76 (from header) */}
         <div className="h-[156px] relative">
