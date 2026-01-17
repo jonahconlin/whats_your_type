@@ -633,8 +633,8 @@ export default function ResultsPage() {
       <Navbar showExit={true} variant="dark" exitText="Return Home" onExitClick={handleReturnHome} mobileHeight="short" />
       
       {/* ===== MOBILE LAYOUT ===== */}
-      {/* Figma Mobile: 390x1028px (scrollable), dark background, pb-128px */}
-      <div className="md:hidden relative z-10 min-h-screen pt-[66px] pb-[128px] overflow-auto">
+      {/* Figma Mobile: 390x1028px (scrollable), dark background, pb-272px */}
+      <div className="md:hidden relative z-10 min-h-screen pt-[66px] pb-[272px] overflow-auto">
         {/* Container - Figma: 24px gap between sections */}
         <div className="flex flex-col gap-[24px]">
           {/* Content Container - Figma: 32px gap, centered */}
@@ -774,7 +774,7 @@ export default function ResultsPage() {
       })()}
       
       {/* ===== DESKTOP LAYOUT ===== */}
-      <div ref={containerRef} className="hidden md:block relative z-10 min-h-screen pt-[66px]">
+      <div ref={containerRef} className="hidden md:block relative z-10 min-h-screen pt-[66px] pb-[272px]">
         {/* Header Section */}
         <div className="flex pl-[40px] pr-[32px] pt-[49px] pb-[40px]">
           {/* Left - Title */}

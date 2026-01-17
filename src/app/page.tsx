@@ -160,6 +160,13 @@ export default function Home() {
         </div>
       )}
 
+      {/* Attribution - Bottom left */}
+      <div className="absolute bottom-0 left-0 z-10 pointer-events-none px-[26px] pb-[26px] md:px-[32px] md:pb-[32px]">
+        <span className="text-white/60 text-[12px] font-normal font-sf-pro-display leading-[1.4em]">
+          Designed by Jonah Conlin, Youngryn Cho, Juwon Lee, and Yeonjin Park for the Computational Creativity Lab | Vibe coded by Jonah Conlin
+        </span>
+      </div>
+
     </main>
 
     {/* Tutorial Popup - Only shown on desktop */}
