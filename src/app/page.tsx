@@ -12,6 +12,7 @@ export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
   const [showToast, setShowToast] = useState(false);
   const [isShareHovered, setIsShareHovered] = useState(false);
+  const [videoError, setVideoError] = useState(false);
 
   const handleStartSurvey = () => {
     // On mobile, skip tutorial and go directly to survey
@@ -89,11 +90,25 @@ export default function Home() {
       className="relative min-h-screen w-full overflow-hidden cursor-pointer"
       onClick={!showTutorial ? handleStartSurvey : undefined}
     >
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: "url('/gradient-bg.png')" }}
-      />
+      {/* Background Video */}
+      {!videoError ? (
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+          onError={() => setVideoError(true)}
+        >
+          <source src="/Gradient_bg/Landing_Page_Animation.mp4" type="video/mp4" />
+        </video>
+      ) : (
+        /* Fallback Background Image */
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: "url('/gradient-bg.png')" }}
+        />
+      )}
       
       {/* Navigation - stop propagation to prevent navigation when clicking nav items */}
       <div onClick={(e) => e.stopPropagation()}>
