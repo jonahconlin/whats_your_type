@@ -33,7 +33,7 @@ export default function Home() {
   };
 
   const handleShare = async () => {
-    const surveyLink = "https://whatsyourtype.com/survey"; // Placeholder link
+    const surveyLink = "https://whats-your-type.vercel.app/";
     
     try {
       await navigator.clipboard.writeText(surveyLink);
